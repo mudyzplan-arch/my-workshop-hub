@@ -1,0 +1,31 @@
+{
+  "name": "my-workshop-hub",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "NEXT_SWC_WASM=1 node node_modules/next/dist/bin/next dev",
+    "build": "NEXT_SWC_WASM=1 node node_modules/next/dist/bin/next build",
+    "start": "NEXT_SWC_WASM=1 node node_modules/next/dist/bin/next start",
+    "db:generate": "npx prisma generate",
+    "db:push": "npx prisma db push"
+  },
+  "dependencies": {
+    "@prisma/client": "5.22.0",
+    "bcryptjs": "2.4.3",
+    "next": "14.2.18",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "2.4.6",
+    "@types/node": "20.14.12",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "prisma": "5.22.0",
+    "typescript": "5.5.4"
+  },
+  "optionalDependencies": {
+    "@next/swc-android-arm64": "14.2.18",
+    "@next/swc-wasm-nodejs": "^14.2.18"
+  }
+}
